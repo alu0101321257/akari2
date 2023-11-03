@@ -1,4 +1,5 @@
 # *Akari* ![_6776e34e-17fc-4c54-a5be-1f7672ca73f0](https://github.com/SamuelToledoHdez/Akari-DAP/assets/92159124/499f5da3-7a86-4a54-83b9-3ee39ab7e2b4)
+![280257116-499f5da3-7a86-4a54-83b9-3ee39ab7e2b4 (1)](https://github.com/SamuelToledoHdez/Akari-DAP/assets/72403194/be5c2f3f-92fb-47d9-843a-ba9cf8a42511)
 
 Akari Puzzle Game application created by davisatwell
 ## Integrantes
