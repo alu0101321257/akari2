@@ -1,4 +1,5 @@
-# *Akari* <img src = "https://play-lh.googleusercontent.com/vEzsiNxeZyGvdmc29HTRcL3kiay7Idv0PR9uKvJXPzVi4mZUdqJNiufPkQCtrAoiVA=w50-h100-rw"/>
+# *Akari* ![_6776e34e-17fc-4c54-a5be-1f7672ca73f0](https://github.com/SamuelToledoHdez/Akari-DAP/assets/92159124/499f5da3-7a86-4a54-83b9-3ee39ab7e2b4)
+
 Akari Puzzle Game application created by davisatwell
 ## Integrantes
 
