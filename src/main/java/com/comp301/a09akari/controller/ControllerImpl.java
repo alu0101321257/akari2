@@ -29,7 +29,9 @@ public class ControllerImpl implements ClassicMvcController {
   }
 
   public void clickRandPuzzle() {
-    Random randomPuzzle = new Random();
+    SecureRandom randomPuzzle = new SecureRandom(); // Compliant for security-sensitive use cases
+    byte bytes[] = new byte[20];
+    randomPuzzle.nextBytes(bytes);
     int randomPuzzleIndex = randomPuzzle.nextInt(model.getPuzzleLibrarySize());
     while (model.getActivePuzzleIndex() == randomPuzzleIndex) {
       randomPuzzleIndex = randomPuzzle.nextInt(model.getPuzzleLibrarySize());
