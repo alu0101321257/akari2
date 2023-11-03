@@ -3,7 +3,9 @@ Akari Puzzle Game application created by davisatwell
 ## Integrantes
 
 Javier González de la Barreda Arimany 
+
 Juan Diego Rendón Cachafeiro
+
 Samuel Toledo Hernández
 
 ## Introduction
