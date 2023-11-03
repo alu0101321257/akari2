@@ -1,4 +1,4 @@
-# *Akari* ![_6776e34e-17fc-4c54-a5be-1f7672ca73f0](https://github.com/SamuelToledoHdez/Akari-DAP/assets/92159124/499f5da3-7a86-4a54-83b9-3ee39ab7e2b4)
+# *Akari* 
 ![280257116-499f5da3-7a86-4a54-83b9-3ee39ab7e2b4 (2)](https://github.com/SamuelToledoHdez/Akari-DAP/assets/72403194/e483831f-0e47-4aa4-8e21-1d0b0da9ae95)
 
 
