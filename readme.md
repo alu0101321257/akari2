@@ -1,5 +1,11 @@
 # *Akari* <img src = "https://play-lh.googleusercontent.com/vEzsiNxeZyGvdmc29HTRcL3kiay7Idv0PR9uKvJXPzVi4mZUdqJNiufPkQCtrAoiVA=w50-h100-rw"/>
 Akari Puzzle Game application created by davisatwell
+## Integrantes
+
+Javier González de la Barreda Arimany 
+Juan Diego Rendón Cachafeiro
+Samuel Toledo Hernández
+
 ## Introduction
 
 Utilized the model-view-controller design pattern with the JavaFX UI library to design a complete, functioning GUI implementation of the single-player logic puzzle akari.
