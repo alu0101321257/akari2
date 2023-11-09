@@ -30,4 +30,4 @@ To run the application with Maven in IntelliJ, follow these steps:
 
 4. Double-click "javafx:run" to run the project.
 
-#!(https://sonarcloud.io/api/project_badges/measure?project=SamuelToledoHdez_Akari-DAP&metric=alert_status)
+![sonarcloud](https://sonarcloud.io/api/project_badges/measure?project=SamuelToledoHdez_Akari-DAP&metric=alert_status)
