@@ -24,6 +24,7 @@ public class AppLauncher extends Application {
     Puzzle puzzle6 = new PuzzleImpl(SamplePuzzles.PUZZLE_06);
     Puzzle puzzle7 = new PuzzleImpl(SamplePuzzles.PUZZLE_07);
     Puzzle puzzle8 = new PuzzleImpl(SamplePuzzles.PUZZLE_EXPERTO);
+    Puzzle puzzle9 = new PuzzleImpl(SamplePuzzles.PUZZLE_08);
 
     PuzzleLibrary library = new PuzzleLibraryImpl();
     library.addPuzzle(puzzle1);
@@ -34,6 +35,7 @@ public class AppLauncher extends Application {
     library.addPuzzle(puzzle6);
     library.addPuzzle(puzzle7);
     library.addPuzzle(puzzle8);
+    library.addPuzzle(puzzle9);
 
     Model model = new ModelImpl(library);
     ClassicMvcController controller = new ControllerImpl(model);
