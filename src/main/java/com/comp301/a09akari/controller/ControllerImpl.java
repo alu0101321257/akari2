@@ -3,15 +3,20 @@ package com.comp301.a09akari.controller;
 import com.comp301.a09akari.controller.ClassicMvcController;
 import com.comp301.a09akari.model.CellType;
 import com.comp301.a09akari.model.Model;
+import com.comp301.a09akari.view.Timer;
 
 import java.security.SecureRandom;
+import java.text.DecimalFormat;
 import java.util.Random;
 
 public class ControllerImpl implements ClassicMvcController {
   private Model model;
+  private Timer timer;
 
   public ControllerImpl(Model model) {
     this.model = model;
+    this.timer = new Timer();
+    this.timer.start();
   }
 
   public void clickNextPuzzle() {
@@ -54,4 +59,14 @@ public class ControllerImpl implements ClassicMvcController {
       }
     }
   }
+
+  @Override
+  public double getElapsedTime() {
+    double elapsedTime = timer.getElapsedTime();
+
+    // Formatea el tiempo con un solo decimal
+    DecimalFormat decimalFormat = new DecimalFormat("#.#");
+    return Double.parseDouble(decimalFormat.format(elapsedTime));
+  }
+
 }

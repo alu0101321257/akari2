@@ -14,6 +14,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class AppLauncher extends Application {
+  private Timer timer;
   @Override
   public void start(Stage stage) {
     Puzzle puzzle1 = new PuzzleImpl(SamplePuzzles.PUZZLE_01);
@@ -50,5 +51,8 @@ public class AppLauncher extends Application {
         });
     stage.setTitle("Akari Puzzle Game");
     stage.show();
+
+
+
   }
 }
