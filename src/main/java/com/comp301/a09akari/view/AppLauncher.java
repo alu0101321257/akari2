@@ -37,7 +37,7 @@ public class AppLauncher extends Application {
     library.addPuzzle(puzzle8);
 
     Model model = new ModelImpl(library);
-    ClassicMvcController controller = new ControllerImpl(model);
+    ClassicMvcController controller = new ControllerImpl(model,stage);
     View view = new View(controller, model);
 
     Scene scene = new Scene(view.render());
@@ -51,6 +51,9 @@ public class AppLauncher extends Application {
         });
     stage.setTitle("Akari Puzzle Game");
     stage.show();
+    stage.setOnCloseRequest(event -> {
+      controller.getTime();
+    });
 
 
 

@@ -17,4 +17,5 @@ public interface ClassicMvcController {
   void clickCell(int r, int c);
 
   double getElapsedTime();
+  void getTime();
 }

@@ -4,6 +4,7 @@ import com.comp301.a09akari.controller.ClassicMvcController;
 import com.comp301.a09akari.model.CellType;
 import com.comp301.a09akari.model.Model;
 import com.comp301.a09akari.view.Timer;
+import javafx.stage.Stage;
 
 import java.security.SecureRandom;
 import java.text.DecimalFormat;
@@ -13,9 +14,9 @@ public class ControllerImpl implements ClassicMvcController {
   private Model model;
   private Timer timer;
 
-  public ControllerImpl(Model model) {
+  public ControllerImpl(Model model, Stage stage) {
     this.model = model;
-    this.timer = new Timer();
+    this.timer = new Timer(stage);
     this.timer.start();
   }
 
@@ -67,6 +68,11 @@ public class ControllerImpl implements ClassicMvcController {
     // Formatea el tiempo con un solo decimal
     DecimalFormat decimalFormat = new DecimalFormat("#.#");
     return Double.parseDouble(decimalFormat.format(elapsedTime));
+  }
+  @Override
+  public void getTime() {
+    timer.showTimeFinal();
+
   }
 
 }
