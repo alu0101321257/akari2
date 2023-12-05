@@ -1,79 +1,137 @@
+/**
+ * @file Model.java
+ * @brief Interface defining the behavior of a puzzle model.
+ *
+ * This interface outlines the methods necessary for interacting with a puzzle model, including adding and removing lamps,
+ * checking the status of cells, managing the active puzzle, and observing changes in the model.
+ *
+ * @package com.comp301.a09akari.model
+ */
 package com.comp301.a09akari.model;
-
+/**
+ * @brief Interface defining the behavior of a puzzle model.
+ *
+ * This interface outlines the methods necessary for interacting with a puzzle model, including adding and removing lamps,
+ * checking the status of cells, managing the active puzzle, and observing changes in the model.
+ */
 public interface Model {
   /**
-   * Adds a lamp if one doesn't already exist to the active puzzle in the cell at row r, column c.
-   * Throws an IndexOutOfBoundsException if r or c is out of bounds, or an IllegalArgumentException
-   * if the cell is not type CORRIDOR
+   * @brief Adds a lamp to the active puzzle in the cell at row r, column c.
+   *
+   * @param r The row of the cell.
+   * @param c The column of the cell.
+   * @throws IndexOutOfBoundsException if r or c is out of bounds.
+   * @throws IllegalArgumentException if the cell is not type CORRIDOR.
    */
   void addLamp(int r, int c);
 
   /**
-   * Removes a lamp if one exists from the active puzzle at the cell at row r, column c. Throws an
-   * IndexOutOfBoundsException if r or c is out of bounds, or an IllegalArgumentException if the
-   * cell is not type CORRIDOR
+   * @brief Removes a lamp from the active puzzle at the cell at row r, column c.
+   *
+   * @param r The row of the cell.
+   * @param c The column of the cell.
+   * @throws IndexOutOfBoundsException if r or c is out of bounds.
+   * @throws IllegalArgumentException if the cell is not type CORRIDOR.
    */
   void removeLamp(int r, int c);
 
   /**
-   * Returns true only if, in the active puzzle, the cell location row r, column c is currently
-   * illuminated by a nearby lamp in the same column or row (and which is not blocked by a wall or
-   * clue). If the cell itself contains a lamp, this method should also return true. Throws an
-   * IndexOutOfBoundsException if r or c is out of bounds, or an IllegalArgumentException if the
-   * cell is not type CORRIDOR
+   * @brief Checks if the cell at row r, column c in the active puzzle is currently illuminated by a nearby lamp.
+   *
+   * @param r The row of the cell.
+   * @param c The column of the cell.
+   * @return True if the cell is illuminated, false otherwise.
+   * @throws IndexOutOfBoundsException if r or c is out of bounds.
+   * @throws IllegalArgumentException if the cell is not type CORRIDOR.
    */
   boolean isLit(int r, int c);
 
   /**
-   * Returns true only if, in the active puzzle, the cell at row r, column c contains a user-placed
-   * lamp. Throws an IndexOutOfBoundsException if r or c is out of bounds, or an
-   * IllegalArgumentException if the cell is not type CORRIDOR
+   * @brief Checks if the cell at row r, column c in the active puzzle contains a user-placed lamp.
+   *
+   * @param r The row of the cell.
+   * @param c The column of the cell.
+   * @return True if the cell contains a lamp, false otherwise.
+   * @throws IndexOutOfBoundsException if r or c is out of bounds.
+   * @throws IllegalArgumentException if the cell is not type CORRIDOR.
    */
   boolean isLamp(int r, int c);
 
   /**
-   * Returns true only if, in the active puzzle, the cell at row r, column c contains a user-placed
-   * lamp that is in direct view of another lamp (i.e. the lamp is illegally placed). Throws an
-   * IndexOutOfBoundsException if r or c is out of bounds, or an IllegalArgumentException if the
-   * cell does not currently contain a lamp
+   * @brief Checks if the cell at row r, column c in the active puzzle contains a user-placed lamp that is illegally placed.
+   *
+   * @param r The row of the cell.
+   * @param c The column of the cell.
+   * @return True if the cell contains an illegally placed lamp, false otherwise.
+   * @throws IndexOutOfBoundsException if r or c is out of bounds.
+   * @throws IllegalArgumentException if the cell does not currently contain a lamp.
    */
   boolean isLampIllegal(int r, int c);
 
-  /** Getter method for the current active Puzzle instance */
+  /** 
+   * @brief Getter method for the current active Puzzle instance.
+   *
+   * @return The active puzzle.
+   */
   Puzzle getActivePuzzle();
 
-  /** Getter method for the active puzzle index */
+  /** 
+   * @brief Getter method for the active puzzle index.
+   *
+   * @return The index of the active puzzle.
+   */
   int getActivePuzzleIndex();
 
   /**
-   * Setter method for the current active Puzzle index. If the passed index is out of bounds, this
-   * method should throw an IndexOutOfBoundsException
+   * @brief Setter method for the current active Puzzle index.
+   *
+   * @param index The new index for the active puzzle.
+   * @throws IndexOutOfBoundsException if the passed index is out of bounds.
    */
   void setActivePuzzleIndex(int index);
 
-  /** Getter method for the number of puzzles contained in the internal PuzzleLibrary */
+  
+  /**
+   * @brief Getter method for the number of puzzles contained in the internal PuzzleLibrary.
+   *
+   * @return The size of the puzzle library.
+   */
   int getPuzzleLibrarySize();
 
-  /** Resets the active puzzle by removing all lamps which have been placed */
+  /** 
+   * @brief Resets the active puzzle by removing all lamps which have been placed.
+   */
   void resetPuzzle();
 
   /**
-   * Returns true if the active puzzle is solved (i.e. every clue is satisfied and every corridor is
-   * illuminated)
+   * @brief Checks if the active puzzle is solved.
+   *
+   * @return True if the puzzle is solved, false otherwise.
    */
   boolean isSolved();
 
   /**
-   * Returns true if the clue located at row r, column c of the active puzzle is satisfied (i.e. has
-   * exactly the number of lamps adjacent as is specified by the clue). Throws an
-   * IndexOutOfBoundsException if r or c is out of bounds, or an IllegalArgumentException if the
-   * cell is not type CLUE
+   * @brief Checks if the clue at row r, column c of the active puzzle is satisfied.
+   *
+   * @param r The row of the clue.
+   * @param c The column of the clue.
+   * @return True if the clue is satisfied, false otherwise.
+   * @throws IndexOutOfBoundsException if r or c is out of bounds.
+   * @throws IllegalArgumentException if the cell is not type CLUE.
    */
   boolean isClueSatisfied(int r, int c);
 
-  /** Adds an observer to the model */
+  /** 
+   * @brief Adds an observer to the model.
+   *
+   * @param observer The observer to add.
+   */
   void addObserver(ModelObserver observer);
 
-  /** Removes an observer from the model */
+  /** 
+   * @brief Removes an observer from the model.
+   *
+   * @param observer The observer to remove.
+   */
   void removeObserver(ModelObserver observer);
 }
