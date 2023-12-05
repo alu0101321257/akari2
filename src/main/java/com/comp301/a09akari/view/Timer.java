@@ -1,3 +1,7 @@
+/**
+ * @file Timer.java
+ * This class represents a timer for tracking elapsed time in a JavaFX application.
+ */
 package com.comp301.a09akari.view;
 
 import com.comp301.a09akari.controller.ClassicMvcController;
@@ -18,31 +22,49 @@ public class Timer extends AnimationTimer {
     private DecimalFormat decimalFormat;
     private Stage primaryStage;
 
+    /**
+     * Constructs a Timer instance.
+     *
+     * @param primaryStage The primary stage of the JavaFX application.
+     */
     public Timer(Stage primaryStage) {
         this.startTime = System.nanoTime();
         this.decimalFormat = new DecimalFormat("#.#");
         this.primaryStage = primaryStage;
     }
 
+    /**
+     * Handles the timer update on each frame.
+     *
+     * @param now The current time in nanoseconds.
+     */
     @Override
     public void handle(long now) {
         double elapsedTime = (now - startTime) / 1e9;
 
-        // Realiza acciones adicionales si es necesario
-        // Puedes imprimir el tiempo para verificar que se está actualizando
-        System.out.println("Tiempo actualizado: " + elapsedTime);
+        // Perform additional actions if necessary
+        // You can print the time to verify that it is updating
+        System.out.println("Updated time: " + elapsedTime);
     }
 
+    /**
+     * Gets the elapsed time since the timer was started.
+     *
+     * @return The elapsed time in seconds.
+     */
     public double getElapsedTime() {
         return Double.parseDouble(decimalFormat.format((System.nanoTime() - startTime) / 1e9));
     }
 
+    /**
+     * Displays the final time in a new window.
+     */
     public void showTimeFinal() {
-        // Crea una nueva ventana para mostrar el tiempo final
+        // Create a new window to display the final time
         Stage timeFinalStage = new Stage();
         TimeDisplayView timeDisplayView = new TimeDisplayViewImpl();
         timeFinalStage.setScene(new Scene(timeDisplayView.render(getElapsedTime()), 300, 200));
-        timeFinalStage.setTitle("Tiempo Final");
+        timeFinalStage.setTitle("Final Time");
         timeFinalStage.show();
     }
 }

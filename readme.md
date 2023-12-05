@@ -3,7 +3,7 @@
 
 Akari Puzzle Game application created by davisatwell
 
-![sonarcloud](https://sonarcloud.io/api/project_badges/measure?project=SamuelToledoHdez_Akari-DAP&metric=alert_status)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SamuelToledoHdez_Akari-DAP&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=SamuelToledoHdez_Akari-DAP)
 
 
 ## Integrantes
