@@ -18,22 +18,11 @@
     <maven.compiler.source>1.9</maven.compiler.source>
     <maven.compiler.target>1.9</maven.compiler.target>
   </properties>
-  
-
 
   <dependencies>
-    <dependency>
-      <!-- <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope> -->
-      <!--Versión actualizada de las dependencias de junit -->
 
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13.2</version>
-      <scope>test</scope>
-    </dependency>
+
+
 
     <dependency>
       <groupId>org.openjfx</groupId>
@@ -41,46 +30,28 @@
       <version>14</version>
     </dependency>
 
-  <!-- Dependencia de Metrics de Jenkins -->
-    <dependency>
-      <groupId>org.jenkins-ci.plugins</groupId>
-      <artifactId>metrics</artifactId>
-    </dependency>
-
-  <!-- Dependencia de Aditional Metrics de Jenkins -->
-    <dependency>
-      <groupId>org.jenkins-ci.plugins</groupId>
-      <artifactId>additional-metrics</artifactId>
-      <version>67.vcb_823d3999a_2</version>
-    </dependency>
-
-  <!-- Dependencia de Build History Metrics de Jenkins -->
-    <dependency>
-      <groupId>org.jenkins-ci.plugins</groupId>
-      <artifactId>build-history-metrics-plugin</artifactId>
-      <version>112.v476124de7dfc</version>
-    </dependency>
-
-  <!-- Dependencia OWASP -->
-    <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <version>1.2.14</version>
-    </dependency>
-
-  <!-- Dependencia de Plot de Jenkins -->
-  <dependency>
-    <groupId>org.jenkins-ci.plugins</groupId>
-    <artifactId>plot</artifactId>
-    <version>2.1.12</version>
-  </dependency>
-
     <dependency>
       <groupId>org.openjfx</groupId>
       <artifactId>javafx-fxml</artifactId>
       <version>14</version>
     </dependency>
+
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>5.8.2</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-engine</artifactId>
+    <version>5.8.2</version>
+    <scope>test</scope>
+</dependency>
+
   </dependencies>
+
+  
 
   <build>
     <plugins>
@@ -95,13 +66,15 @@
         <version>3.0.2</version>
       </plugin>
       <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.0</version>
-      </plugin>
-      <plugin>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.22.1</version>
-      </plugin>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.9.0</version>
+</plugin>
+
+<plugin>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.0.0-M5</version>
+</plugin>
+
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.0.2</version>
@@ -158,3 +131,5 @@
     </plugins>
   </build>
 </project>
+
+
