@@ -24,7 +24,7 @@ import javafx.stage.Stage;
  * @brief Application launcher for the Akari Puzzle Game.
  *
  * This class extends the JavaFX Application class to launch the Akari Puzzle Game application.
- */
+ **/
 public class AppLauncher extends Application {
   private Timer timer;
   /**
