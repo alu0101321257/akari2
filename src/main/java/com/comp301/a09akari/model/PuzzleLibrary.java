@@ -1,18 +1,32 @@
 package com.comp301.a09akari.model;
 
+/**
+ * @file PuzzleLibrary.java
+ * This interface represents a puzzle library, providing methods to manage and retrieve puzzles.
+ */
 public interface PuzzleLibrary {
+
   /**
-   * Adds the given puzzle so that it is the last puzzle in the library. Throws an
-   * IllegalArgumentException if null is passed
+   * Adds the given puzzle to the library, placing it as the last puzzle.
+   *
+   * @param puzzle The puzzle to be added to the library.
+   * @throws IllegalArgumentException If a null puzzle is passed.
    */
   void addPuzzle(Puzzle puzzle);
 
   /**
-   * Returns the puzzle at the specified index. Throws an IndexOutOfBoundsException if the specified
-   * index is outside the bounds of the puzzle library
+   * Retrieves the puzzle at the specified index in the library.
+   *
+   * @param index The index of the puzzle to retrieve.
+   * @return The puzzle at the specified index.
+   * @throws IndexOutOfBoundsException If the specified index is outside the bounds of the library.
    */
   Puzzle getPuzzle(int index);
 
-  /** Returns the size of the puzzle library, which is the number of puzzles it contains */
+  /**
+   * Returns the size of the puzzle library, which is the number of puzzles it contains.
+   *
+   * @return The size of the puzzle library.
+   */
   int size();
 }
