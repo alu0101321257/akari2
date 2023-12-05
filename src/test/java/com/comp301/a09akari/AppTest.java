@@ -4,9 +4,14 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-/** Unit test for simple App. */
+/**
+ * @file AppTest.java
+ * Unit test for the Akari puzzle game application.
+ */
 public class AppTest {
-  /** Rigorous Test :-) */
+  /**
+   * Rigorous Test :-)
+   */
   @Test
   public void shouldAnswerWithTrue() {
     assertTrue(true);
