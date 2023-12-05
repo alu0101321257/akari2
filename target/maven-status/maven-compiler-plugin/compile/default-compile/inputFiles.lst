@@ -4,6 +4,8 @@
 /home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/model/ModelObserver.java
 /home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/model/ModelImpl.java
 /home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/model/CellType.java
+/home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/view/TimeDisplayViewImpl.java
+/home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/view/TimeDisplayView.java
 /home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/view/ControlView.java
 /home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/controller/ClassicMvcController.java
 /home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/model/PuzzleImpl.java
@@ -13,6 +15,7 @@
 /home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/view/AppLauncher.java
 /home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/view/MessageView.java
 /home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/SamplePuzzles.java
+/home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/view/Timer.java
 /home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/controller/AlternateMvcController.java
 /home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/model/PuzzleLibraryImpl.java
 /home/samuel/Desktop/lab/Akari-DAP/src/main/java/com/comp301/a09akari/model/Puzzle.java
