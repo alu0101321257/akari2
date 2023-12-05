@@ -1,0 +1,113 @@
+\doxysection{com.\+comp301.\+a09akari.\+model.\+Puzzle Interface Reference}
+\hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle}{}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle}\index{com.comp301.a09akari.model.Puzzle@{com.comp301.a09akari.model.Puzzle}}
+Inheritance diagram for com.\+comp301.\+a09akari.\+model.\+Puzzle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a94b1ebad632c1aa1a31059d7c9c9754a}{get\+Width}} ()
+\item 
+int \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a90f4a0fe6318272b6c370f0b7c1261a4}{get\+Height}} ()
+\item 
+\mbox{\hyperlink{enumcom_1_1comp301_1_1a09akari_1_1model_1_1_cell_type}{Cell\+Type}} \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a9c157c7dc19d4f776d872cb7ae26f108}{get\+Cell\+Type}} (int r, int c)
+\item 
+int \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a7f81ca47b95b2a39f04b9a2c2f3b0b54}{get\+Clue}} (int r, int c)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a9c157c7dc19d4f776d872cb7ae26f108}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a9c157c7dc19d4f776d872cb7ae26f108} 
+\index{com.comp301.a09akari.model.Puzzle@{com.comp301.a09akari.model.Puzzle}!getCellType@{getCellType}}
+\index{getCellType@{getCellType}!com.comp301.a09akari.model.Puzzle@{com.comp301.a09akari.model.Puzzle}}
+\doxysubsubsection{\texorpdfstring{getCellType()}{getCellType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumcom_1_1comp301_1_1a09akari_1_1model_1_1_cell_type}{Cell\+Type}} com.\+comp301.\+a09akari.\+model.\+Puzzle.\+get\+Cell\+Type (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+Getter method for the type of the cell located at row r, column c.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row index of the cell. \\
+\hline
+{\em c} & The column index of the cell. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The type of the cell at the specified position. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\+Out\+Of\+Bounds\+Exception} & If r or c is out of bounds. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_a598ff438b27f374e5496e4784174a24f}{com.\+comp301.\+a09akari.\+model.\+Puzzle\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a7f81ca47b95b2a39f04b9a2c2f3b0b54}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a7f81ca47b95b2a39f04b9a2c2f3b0b54} 
+\index{com.comp301.a09akari.model.Puzzle@{com.comp301.a09akari.model.Puzzle}!getClue@{getClue}}
+\index{getClue@{getClue}!com.comp301.a09akari.model.Puzzle@{com.comp301.a09akari.model.Puzzle}}
+\doxysubsubsection{\texorpdfstring{getClue()}{getClue()}}
+{\footnotesize\ttfamily int com.\+comp301.\+a09akari.\+model.\+Puzzle.\+get\+Clue (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+Getter method for the clue number of the cell located at row r, column c.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row index of the cell. \\
+\hline
+{\em c} & The column index of the cell. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clue number of the cell at the specified position. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\+Out\+Of\+Bounds\+Exception} & If r or c is out of bounds. \\
+\hline
+{\em Illegal\+Argument\+Exception} & If the cell is not of type CLUE. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_af81d8e73f42c427ec574e31a81d72dd7}{com.\+comp301.\+a09akari.\+model.\+Puzzle\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a90f4a0fe6318272b6c370f0b7c1261a4}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a90f4a0fe6318272b6c370f0b7c1261a4} 
+\index{com.comp301.a09akari.model.Puzzle@{com.comp301.a09akari.model.Puzzle}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!com.comp301.a09akari.model.Puzzle@{com.comp301.a09akari.model.Puzzle}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int com.\+comp301.\+a09akari.\+model.\+Puzzle.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter method for the height of the puzzle (i.\+e., the number of rows it has).
+
+\begin{DoxyReturn}{Returns}
+The height of the puzzle. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_a5e8bb42918b4bb717958f645147f0914}{com.\+comp301.\+a09akari.\+model.\+Puzzle\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a94b1ebad632c1aa1a31059d7c9c9754a}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a94b1ebad632c1aa1a31059d7c9c9754a} 
+\index{com.comp301.a09akari.model.Puzzle@{com.comp301.a09akari.model.Puzzle}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!com.comp301.a09akari.model.Puzzle@{com.comp301.a09akari.model.Puzzle}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int com.\+comp301.\+a09akari.\+model.\+Puzzle.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter method for the width of the puzzle (i.\+e., the number of columns it has).
+
+\begin{DoxyReturn}{Returns}
+The width of the puzzle. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_ad9d3f8f8db84afde468582455294c88c}{com.\+comp301.\+a09akari.\+model.\+Puzzle\+Impl}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/comp301/a09akari/model/\mbox{\hyperlink{_puzzle_8java}{Puzzle.\+java}}\end{DoxyCompactItemize}

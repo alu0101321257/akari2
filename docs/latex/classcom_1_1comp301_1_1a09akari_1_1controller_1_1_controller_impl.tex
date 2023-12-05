@@ -1,0 +1,173 @@
+\doxysection{com.\+comp301.\+a09akari.\+controller.\+Controller\+Impl Class Reference}
+\hypertarget{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl}{}\label{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl}\index{com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}}
+
+
+Implementation of the Classic\+Mvc\+Controller interface for handling puzzle-\/related actions.  
+
+
+Inheritance diagram for com.\+comp301.\+a09akari.\+controller.\+Controller\+Impl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a7bbd0e93f6aae0f3aab374490580dd89}{Controller\+Impl}} (Model model, Stage stage)
+\begin{DoxyCompactList}\small\item\em Constructor for the Controller\+Impl class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_af5dcdb21801d2e6ae8c4ece07490ac8f}{click\+Next\+Puzzle}} ()
+\begin{DoxyCompactList}\small\item\em Handles the click action to go to the next puzzle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a2b5b24f4664ecbb9c7d6c8fadf58d75c}{click\+Prev\+Puzzle}} ()
+\begin{DoxyCompactList}\small\item\em Handles the click action to go to the previous puzzle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_aafcc0d79cd6f948af440d94bb927b24a}{click\+Rand\+Puzzle}} ()
+\begin{DoxyCompactList}\small\item\em Handles the click action to go to a random puzzle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a0f8ebe75ad019b9c141ef46d9d67922f}{click\+Reset\+Puzzle}} ()
+\begin{DoxyCompactList}\small\item\em Handles the click action to reset the currently active puzzle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a1d7d1a34cabc5dc9159c3ce3a3e63873}{click\+Cell}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Handles the click event on the cell at row r, column c. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a3acfb3b8ff03b0011bd95e9cd4a6287c}{get\+Elapsed\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Gets the elapsed time since the start of the puzzle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_ac189d8171590b2cb2290acf98937a864}{get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Displays the current time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the Classic\+Mvc\+Controller interface for handling puzzle-\/related actions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a7bbd0e93f6aae0f3aab374490580dd89}\label{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a7bbd0e93f6aae0f3aab374490580dd89} 
+\index{com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}!ControllerImpl@{ControllerImpl}}
+\index{ControllerImpl@{ControllerImpl}!com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}}
+\doxysubsubsection{\texorpdfstring{ControllerImpl()}{ControllerImpl()}}
+{\footnotesize\ttfamily com.\+comp301.\+a09akari.\+controller.\+Controller\+Impl.\+Controller\+Impl (\begin{DoxyParamCaption}\item[{Model}]{model,  }\item[{Stage}]{stage }\end{DoxyParamCaption})}
+
+
+
+Constructor for the Controller\+Impl class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & The Model instance associated with the controller. \\
+\hline
+{\em stage} & The Java\+FX stage for managing the timer view. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a1d7d1a34cabc5dc9159c3ce3a3e63873}\label{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a1d7d1a34cabc5dc9159c3ce3a3e63873} 
+\index{com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}!clickCell@{clickCell}}
+\index{clickCell@{clickCell}!com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}}
+\doxysubsubsection{\texorpdfstring{clickCell()}{clickCell()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+controller.\+Controller\+Impl.\+click\+Cell (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Handles the click event on the cell at row r, column c. 
+
+If the clicked cell is a CORRIDOR cell, toggles the cell\textquotesingle{}s state between being a lamp and not being a lamp.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row of the clicked cell. \\
+\hline
+{\em c} & The column of the clicked cell. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_classic_mvc_controller_a7d06bcc31c8e1995d899c9dc572fc7f0}{com.\+comp301.\+a09akari.\+controller.\+Classic\+Mvc\+Controller}}.
+
+\Hypertarget{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_af5dcdb21801d2e6ae8c4ece07490ac8f}\label{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_af5dcdb21801d2e6ae8c4ece07490ac8f} 
+\index{com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}!clickNextPuzzle@{clickNextPuzzle}}
+\index{clickNextPuzzle@{clickNextPuzzle}!com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}}
+\doxysubsubsection{\texorpdfstring{clickNextPuzzle()}{clickNextPuzzle()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+controller.\+Controller\+Impl.\+click\+Next\+Puzzle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the click action to go to the next puzzle. 
+
+If the current puzzle is the last puzzle in the library, it wraps around to the first puzzle. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_classic_mvc_controller_a6e9e595e53d949b1afc7761d0abab8a8}{com.\+comp301.\+a09akari.\+controller.\+Classic\+Mvc\+Controller}}.
+
+\Hypertarget{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a2b5b24f4664ecbb9c7d6c8fadf58d75c}\label{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a2b5b24f4664ecbb9c7d6c8fadf58d75c} 
+\index{com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}!clickPrevPuzzle@{clickPrevPuzzle}}
+\index{clickPrevPuzzle@{clickPrevPuzzle}!com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}}
+\doxysubsubsection{\texorpdfstring{clickPrevPuzzle()}{clickPrevPuzzle()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+controller.\+Controller\+Impl.\+click\+Prev\+Puzzle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the click action to go to the previous puzzle. 
+
+If the current puzzle is the first puzzle in the library, it wraps around to the last puzzle. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_classic_mvc_controller_a3bddaaafa7580482c4aea75a28a90796}{com.\+comp301.\+a09akari.\+controller.\+Classic\+Mvc\+Controller}}.
+
+\Hypertarget{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_aafcc0d79cd6f948af440d94bb927b24a}\label{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_aafcc0d79cd6f948af440d94bb927b24a} 
+\index{com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}!clickRandPuzzle@{clickRandPuzzle}}
+\index{clickRandPuzzle@{clickRandPuzzle}!com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}}
+\doxysubsubsection{\texorpdfstring{clickRandPuzzle()}{clickRandPuzzle()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+controller.\+Controller\+Impl.\+click\+Rand\+Puzzle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the click action to go to a random puzzle. 
+
+Generates a random puzzle index and sets it as the active puzzle, ensuring it\textquotesingle{}s different from the current puzzle. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_classic_mvc_controller_ababb2d6304f895c75c7ad923ba746e0b}{com.\+comp301.\+a09akari.\+controller.\+Classic\+Mvc\+Controller}}.
+
+\Hypertarget{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a0f8ebe75ad019b9c141ef46d9d67922f}\label{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a0f8ebe75ad019b9c141ef46d9d67922f} 
+\index{com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}!clickResetPuzzle@{clickResetPuzzle}}
+\index{clickResetPuzzle@{clickResetPuzzle}!com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}}
+\doxysubsubsection{\texorpdfstring{clickResetPuzzle()}{clickResetPuzzle()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+controller.\+Controller\+Impl.\+click\+Reset\+Puzzle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the click action to reset the currently active puzzle. 
+
+Resets the currently active puzzle to its initial state. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_classic_mvc_controller_afa7d98d5bee4776952d6362afd1e7960}{com.\+comp301.\+a09akari.\+controller.\+Classic\+Mvc\+Controller}}.
+
+\Hypertarget{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a3acfb3b8ff03b0011bd95e9cd4a6287c}\label{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_a3acfb3b8ff03b0011bd95e9cd4a6287c} 
+\index{com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}!getElapsedTime@{getElapsedTime}}
+\index{getElapsedTime@{getElapsedTime}!com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}}
+\doxysubsubsection{\texorpdfstring{getElapsedTime()}{getElapsedTime()}}
+{\footnotesize\ttfamily double com.\+comp301.\+a09akari.\+controller.\+Controller\+Impl.\+get\+Elapsed\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the elapsed time since the start of the puzzle. 
+
+\begin{DoxyReturn}{Returns}
+The elapsed time in seconds. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_classic_mvc_controller_ad223aed28304b2c65d368183ab8eba3e}{com.\+comp301.\+a09akari.\+controller.\+Classic\+Mvc\+Controller}}.
+
+\Hypertarget{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_ac189d8171590b2cb2290acf98937a864}\label{classcom_1_1comp301_1_1a09akari_1_1controller_1_1_controller_impl_ac189d8171590b2cb2290acf98937a864} 
+\index{com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}!getTime@{getTime}}
+\index{getTime@{getTime}!com.comp301.a09akari.controller.ControllerImpl@{com.comp301.a09akari.controller.ControllerImpl}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+controller.\+Controller\+Impl.\+get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the current time. 
+
+This method is responsible for displaying or handling the current time in the context of the puzzle. 
+
+Implements \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_classic_mvc_controller_adf394b46b9fc32323aaa4d2e4c2f4965}{com.\+comp301.\+a09akari.\+controller.\+Classic\+Mvc\+Controller}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/comp301/a09akari/controller/\mbox{\hyperlink{_controller_impl_8java}{Controller\+Impl.\+java}}\end{DoxyCompactItemize}

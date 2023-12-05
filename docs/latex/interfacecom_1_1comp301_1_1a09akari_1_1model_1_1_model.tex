@@ -1,0 +1,381 @@
+\doxysection{com.\+comp301.\+a09akari.\+model.\+Model Interface Reference}
+\hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model}{}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model}\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+
+
+Interface defining the behavior of a puzzle model.  
+
+
+Inheritance diagram for com.\+comp301.\+a09akari.\+model.\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_ab278e3cc72f0ed08370c1d10d0aac9ac}{add\+Lamp}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Adds a lamp to the active puzzle in the cell at row r, column c. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_ac11d142f074a042750bbb9a30c0e845b}{remove\+Lamp}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Removes a lamp from the active puzzle at the cell at row r, column c. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a4dccf3934e9150a97f914c6d750927ee}{is\+Lit}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Checks if the cell at row r, column c in the active puzzle is currently illuminated by a nearby lamp. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_aa58476c5d45dbe3277b281dc9b70977e}{is\+Lamp}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Checks if the cell at row r, column c in the active puzzle contains a user-\/placed lamp. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a34cf00a6887c07210e43ae95ef01a3cc}{is\+Lamp\+Illegal}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Checks if the cell at row r, column c in the active puzzle contains a user-\/placed lamp that is illegally placed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle}{Puzzle}} \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a9c62366f5f6f515ee6cfdb38dfd3dd17}{get\+Active\+Puzzle}} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the current active Puzzle instance. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a4465aff3c8ec9c663549605c61c8b43f}{get\+Active\+Puzzle\+Index}} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the active puzzle index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a74bed6a579346f8ef1e43195cbfad457}{set\+Active\+Puzzle\+Index}} (int index)
+\begin{DoxyCompactList}\small\item\em Setter method for the current active Puzzle index. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_afe689d5f88598512e046a1ccb9b175be}{get\+Puzzle\+Library\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the number of puzzles contained in the internal Puzzle\+Library. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a0cb59c7c60680999c48f4fceb56a01c6}{reset\+Puzzle}} ()
+\begin{DoxyCompactList}\small\item\em Resets the active puzzle by removing all lamps which have been placed. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a1395059795dde2f5ddffeec06112ee52}{is\+Solved}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the active puzzle is solved. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_aecbf6df2c920c76757813afa7e7b9692}{is\+Clue\+Satisfied}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Checks if the clue at row r, column c of the active puzzle is satisfied. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a2ffb9e493754649fd178493c3b167a34}{add\+Observer}} (\mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_observer}{Model\+Observer}} observer)
+\begin{DoxyCompactList}\small\item\em Adds an observer to the model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a3db8ed9eda078c63266d8f3c1b613404}{remove\+Observer}} (\mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_observer}{Model\+Observer}} observer)
+\begin{DoxyCompactList}\small\item\em Removes an observer from the model. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface defining the behavior of a puzzle model. 
+
+This interface outlines the methods necessary for interacting with a puzzle model, including adding and removing lamps, checking the status of cells, managing the active puzzle, and observing changes in the model. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_ab278e3cc72f0ed08370c1d10d0aac9ac}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_ab278e3cc72f0ed08370c1d10d0aac9ac} 
+\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}!addLamp@{addLamp}}
+\index{addLamp@{addLamp}!com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+\doxysubsubsection{\texorpdfstring{addLamp()}{addLamp()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+model.\+Model.\+add\+Lamp (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Adds a lamp to the active puzzle in the cell at row r, column c. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row of the cell. \\
+\hline
+{\em c} & The column of the cell. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\+Out\+Of\+Bounds\+Exception} & if r or c is out of bounds. \\
+\hline
+{\em Illegal\+Argument\+Exception} & if the cell is not type CORRIDOR. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_model_impl_ade27ffa570c09575a8d0d402c7d13e9b}{com.\+comp301.\+a09akari.\+model.\+Model\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a2ffb9e493754649fd178493c3b167a34}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a2ffb9e493754649fd178493c3b167a34} 
+\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}!addObserver@{addObserver}}
+\index{addObserver@{addObserver}!com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+\doxysubsubsection{\texorpdfstring{addObserver()}{addObserver()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+model.\+Model.\+add\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_observer}{Model\+Observer}}}]{observer }\end{DoxyParamCaption})}
+
+
+
+Adds an observer to the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer to add. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_model_impl_a45e93dea37fc4babb7a52a3330a369a2}{com.\+comp301.\+a09akari.\+model.\+Model\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a9c62366f5f6f515ee6cfdb38dfd3dd17}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a9c62366f5f6f515ee6cfdb38dfd3dd17} 
+\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}!getActivePuzzle@{getActivePuzzle}}
+\index{getActivePuzzle@{getActivePuzzle}!com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+\doxysubsubsection{\texorpdfstring{getActivePuzzle()}{getActivePuzzle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle}{Puzzle}} com.\+comp301.\+a09akari.\+model.\+Model.\+get\+Active\+Puzzle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method for the current active Puzzle instance. 
+
+\begin{DoxyReturn}{Returns}
+The active puzzle. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_model_impl_a7d8605de4131756823a2fc35ba043331}{com.\+comp301.\+a09akari.\+model.\+Model\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a4465aff3c8ec9c663549605c61c8b43f}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a4465aff3c8ec9c663549605c61c8b43f} 
+\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}!getActivePuzzleIndex@{getActivePuzzleIndex}}
+\index{getActivePuzzleIndex@{getActivePuzzleIndex}!com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+\doxysubsubsection{\texorpdfstring{getActivePuzzleIndex()}{getActivePuzzleIndex()}}
+{\footnotesize\ttfamily int com.\+comp301.\+a09akari.\+model.\+Model.\+get\+Active\+Puzzle\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method for the active puzzle index. 
+
+\begin{DoxyReturn}{Returns}
+The index of the active puzzle. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_model_impl_ae06069f8edf290e227accbff5656f3e4}{com.\+comp301.\+a09akari.\+model.\+Model\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_afe689d5f88598512e046a1ccb9b175be}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_afe689d5f88598512e046a1ccb9b175be} 
+\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}!getPuzzleLibrarySize@{getPuzzleLibrarySize}}
+\index{getPuzzleLibrarySize@{getPuzzleLibrarySize}!com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+\doxysubsubsection{\texorpdfstring{getPuzzleLibrarySize()}{getPuzzleLibrarySize()}}
+{\footnotesize\ttfamily int com.\+comp301.\+a09akari.\+model.\+Model.\+get\+Puzzle\+Library\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method for the number of puzzles contained in the internal Puzzle\+Library. 
+
+\begin{DoxyReturn}{Returns}
+The size of the puzzle library. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_model_impl_ad38c6e1dd16f717671c2792a3af5b073}{com.\+comp301.\+a09akari.\+model.\+Model\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_aecbf6df2c920c76757813afa7e7b9692}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_aecbf6df2c920c76757813afa7e7b9692} 
+\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}!isClueSatisfied@{isClueSatisfied}}
+\index{isClueSatisfied@{isClueSatisfied}!com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+\doxysubsubsection{\texorpdfstring{isClueSatisfied()}{isClueSatisfied()}}
+{\footnotesize\ttfamily boolean com.\+comp301.\+a09akari.\+model.\+Model.\+is\+Clue\+Satisfied (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Checks if the clue at row r, column c of the active puzzle is satisfied. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row of the clue. \\
+\hline
+{\em c} & The column of the clue. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the clue is satisfied, false otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\+Out\+Of\+Bounds\+Exception} & if r or c is out of bounds. \\
+\hline
+{\em Illegal\+Argument\+Exception} & if the cell is not type CLUE. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_model_impl_adf88fe4028c30c774b9b58f496e35963}{com.\+comp301.\+a09akari.\+model.\+Model\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_aa58476c5d45dbe3277b281dc9b70977e}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_aa58476c5d45dbe3277b281dc9b70977e} 
+\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}!isLamp@{isLamp}}
+\index{isLamp@{isLamp}!com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+\doxysubsubsection{\texorpdfstring{isLamp()}{isLamp()}}
+{\footnotesize\ttfamily boolean com.\+comp301.\+a09akari.\+model.\+Model.\+is\+Lamp (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Checks if the cell at row r, column c in the active puzzle contains a user-\/placed lamp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row of the cell. \\
+\hline
+{\em c} & The column of the cell. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the cell contains a lamp, false otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\+Out\+Of\+Bounds\+Exception} & if r or c is out of bounds. \\
+\hline
+{\em Illegal\+Argument\+Exception} & if the cell is not type CORRIDOR. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_model_impl_ac385d68e6e6530d47a152cc707f98f00}{com.\+comp301.\+a09akari.\+model.\+Model\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a34cf00a6887c07210e43ae95ef01a3cc}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a34cf00a6887c07210e43ae95ef01a3cc} 
+\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}!isLampIllegal@{isLampIllegal}}
+\index{isLampIllegal@{isLampIllegal}!com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+\doxysubsubsection{\texorpdfstring{isLampIllegal()}{isLampIllegal()}}
+{\footnotesize\ttfamily boolean com.\+comp301.\+a09akari.\+model.\+Model.\+is\+Lamp\+Illegal (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Checks if the cell at row r, column c in the active puzzle contains a user-\/placed lamp that is illegally placed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row of the cell. \\
+\hline
+{\em c} & The column of the cell. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the cell contains an illegally placed lamp, false otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\+Out\+Of\+Bounds\+Exception} & if r or c is out of bounds. \\
+\hline
+{\em Illegal\+Argument\+Exception} & if the cell does not currently contain a lamp. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_model_impl_a041cb9acb71cce61761e258910e6e79e}{com.\+comp301.\+a09akari.\+model.\+Model\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a4dccf3934e9150a97f914c6d750927ee}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a4dccf3934e9150a97f914c6d750927ee} 
+\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}!isLit@{isLit}}
+\index{isLit@{isLit}!com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+\doxysubsubsection{\texorpdfstring{isLit()}{isLit()}}
+{\footnotesize\ttfamily boolean com.\+comp301.\+a09akari.\+model.\+Model.\+is\+Lit (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Checks if the cell at row r, column c in the active puzzle is currently illuminated by a nearby lamp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row of the cell. \\
+\hline
+{\em c} & The column of the cell. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the cell is illuminated, false otherwise. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\+Out\+Of\+Bounds\+Exception} & if r or c is out of bounds. \\
+\hline
+{\em Illegal\+Argument\+Exception} & if the cell is not type CORRIDOR. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_model_impl_a8e5b957166299cedad6bdf8307379842}{com.\+comp301.\+a09akari.\+model.\+Model\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a1395059795dde2f5ddffeec06112ee52}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a1395059795dde2f5ddffeec06112ee52} 
+\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}!isSolved@{isSolved}}
+\index{isSolved@{isSolved}!com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+\doxysubsubsection{\texorpdfstring{isSolved()}{isSolved()}}
+{\footnotesize\ttfamily boolean com.\+comp301.\+a09akari.\+model.\+Model.\+is\+Solved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the active puzzle is solved. 
+
+\begin{DoxyReturn}{Returns}
+True if the puzzle is solved, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_model_impl_a4d96db1dc60f60f297d40d0d48d336c2}{com.\+comp301.\+a09akari.\+model.\+Model\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_ac11d142f074a042750bbb9a30c0e845b}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_ac11d142f074a042750bbb9a30c0e845b} 
+\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}!removeLamp@{removeLamp}}
+\index{removeLamp@{removeLamp}!com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+\doxysubsubsection{\texorpdfstring{removeLamp()}{removeLamp()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+model.\+Model.\+remove\+Lamp (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Removes a lamp from the active puzzle at the cell at row r, column c. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row of the cell. \\
+\hline
+{\em c} & The column of the cell. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\+Out\+Of\+Bounds\+Exception} & if r or c is out of bounds. \\
+\hline
+{\em Illegal\+Argument\+Exception} & if the cell is not type CORRIDOR. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_model_impl_a80b1a9a627068c415142d430be05224f}{com.\+comp301.\+a09akari.\+model.\+Model\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a3db8ed9eda078c63266d8f3c1b613404}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a3db8ed9eda078c63266d8f3c1b613404} 
+\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}!removeObserver@{removeObserver}}
+\index{removeObserver@{removeObserver}!com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+\doxysubsubsection{\texorpdfstring{removeObserver()}{removeObserver()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+model.\+Model.\+remove\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_observer}{Model\+Observer}}}]{observer }\end{DoxyParamCaption})}
+
+
+
+Removes an observer from the model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & The observer to remove. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_model_impl_afd20e752cc4ec2b7ce47e9a44bca5988}{com.\+comp301.\+a09akari.\+model.\+Model\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a0cb59c7c60680999c48f4fceb56a01c6}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a0cb59c7c60680999c48f4fceb56a01c6} 
+\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}!resetPuzzle@{resetPuzzle}}
+\index{resetPuzzle@{resetPuzzle}!com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+\doxysubsubsection{\texorpdfstring{resetPuzzle()}{resetPuzzle()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+model.\+Model.\+reset\+Puzzle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the active puzzle by removing all lamps which have been placed. 
+
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_model_impl_a5fa9ab46578f52a4353f7983c0943cf4}{com.\+comp301.\+a09akari.\+model.\+Model\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a74bed6a579346f8ef1e43195cbfad457}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_model_a74bed6a579346f8ef1e43195cbfad457} 
+\index{com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}!setActivePuzzleIndex@{setActivePuzzleIndex}}
+\index{setActivePuzzleIndex@{setActivePuzzleIndex}!com.comp301.a09akari.model.Model@{com.comp301.a09akari.model.Model}}
+\doxysubsubsection{\texorpdfstring{setActivePuzzleIndex()}{setActivePuzzleIndex()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+model.\+Model.\+set\+Active\+Puzzle\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Setter method for the current active Puzzle index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The new index for the active puzzle. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\+Out\+Of\+Bounds\+Exception} & if the passed index is out of bounds. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_model_impl_abe613d3a6d14a5b6f9010d27f2ecdce4}{com.\+comp301.\+a09akari.\+model.\+Model\+Impl}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/comp301/a09akari/model/\mbox{\hyperlink{_model_8java}{Model.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,87 @@
+\doxysection{com.\+comp301.\+a09akari.\+model.\+Puzzle\+Library Interface Reference}
+\hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library}{}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library}\index{com.comp301.a09akari.model.PuzzleLibrary@{com.comp301.a09akari.model.PuzzleLibrary}}
+Inheritance diagram for com.\+comp301.\+a09akari.\+model.\+Puzzle\+Library\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library_aab0ed955e72a2b18352762aca5cbe661}{add\+Puzzle}} (\mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle}{Puzzle}} puzzle)
+\item 
+\mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle}{Puzzle}} \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library_a8fa5374aefb2db6e585a1d2567343a62}{get\+Puzzle}} (int index)
+\item 
+int \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library_adcb8d6b5eb3faf472e2a93853fcef5b9}{size}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library_aab0ed955e72a2b18352762aca5cbe661}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library_aab0ed955e72a2b18352762aca5cbe661} 
+\index{com.comp301.a09akari.model.PuzzleLibrary@{com.comp301.a09akari.model.PuzzleLibrary}!addPuzzle@{addPuzzle}}
+\index{addPuzzle@{addPuzzle}!com.comp301.a09akari.model.PuzzleLibrary@{com.comp301.a09akari.model.PuzzleLibrary}}
+\doxysubsubsection{\texorpdfstring{addPuzzle()}{addPuzzle()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+model.\+Puzzle\+Library.\+add\+Puzzle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle}{Puzzle}}}]{puzzle }\end{DoxyParamCaption})}
+
+Adds the given puzzle to the library, placing it as the last puzzle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em puzzle} & The puzzle to be added to the library. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & If a null puzzle is passed. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library_impl_ab743ed541e2830885040e1a5b33c2905}{com.\+comp301.\+a09akari.\+model.\+Puzzle\+Library\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library_a8fa5374aefb2db6e585a1d2567343a62}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library_a8fa5374aefb2db6e585a1d2567343a62} 
+\index{com.comp301.a09akari.model.PuzzleLibrary@{com.comp301.a09akari.model.PuzzleLibrary}!getPuzzle@{getPuzzle}}
+\index{getPuzzle@{getPuzzle}!com.comp301.a09akari.model.PuzzleLibrary@{com.comp301.a09akari.model.PuzzleLibrary}}
+\doxysubsubsection{\texorpdfstring{getPuzzle()}{getPuzzle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle}{Puzzle}} com.\+comp301.\+a09akari.\+model.\+Puzzle\+Library.\+get\+Puzzle (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Retrieves the puzzle at the specified index in the library.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index of the puzzle to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The puzzle at the specified index. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\+Out\+Of\+Bounds\+Exception} & If the specified index is outside the bounds of the library. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library_impl_a41b2df3ccc1b811e6682b1c0463d0d9c}{com.\+comp301.\+a09akari.\+model.\+Puzzle\+Library\+Impl}}.
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library_adcb8d6b5eb3faf472e2a93853fcef5b9}\label{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library_adcb8d6b5eb3faf472e2a93853fcef5b9} 
+\index{com.comp301.a09akari.model.PuzzleLibrary@{com.comp301.a09akari.model.PuzzleLibrary}!size@{size}}
+\index{size@{size}!com.comp301.a09akari.model.PuzzleLibrary@{com.comp301.a09akari.model.PuzzleLibrary}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int com.\+comp301.\+a09akari.\+model.\+Puzzle\+Library.\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the size of the puzzle library, which is the number of puzzles it contains.
+
+\begin{DoxyReturn}{Returns}
+The size of the puzzle library. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_library_impl_a92805eb1291d27aaea05181742bc845b}{com.\+comp301.\+a09akari.\+model.\+Puzzle\+Library\+Impl}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/comp301/a09akari/model/\mbox{\hyperlink{_puzzle_library_8java}{Puzzle\+Library.\+java}}\end{DoxyCompactItemize}

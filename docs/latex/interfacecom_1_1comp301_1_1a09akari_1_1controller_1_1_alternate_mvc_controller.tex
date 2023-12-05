@@ -1,0 +1,186 @@
+\doxysection{com.\+comp301.\+a09akari.\+controller.\+Alternate\+Mvc\+Controller Interface Reference}
+\hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller}{}\label{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller}\index{com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}}
+
+
+Interface for handling puzzle-\/related actions in an MVC architecture.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a596093f7ea88247338fd114fe8787330}{click\+Next\+Puzzle}} ()
+\begin{DoxyCompactList}\small\item\em Handles the click action to go to the next puzzle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a7740e641256c2278ab5938659d688369}{click\+Prev\+Puzzle}} ()
+\begin{DoxyCompactList}\small\item\em Handles the click action to go to the next puzzle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_ad1f7fcce8b76c3d96c74bc6f14bbf224}{click\+Rand\+Puzzle}} ()
+\begin{DoxyCompactList}\small\item\em Handles the click action to go to a random puzzle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a11f5840d6370757be10df3644a604119}{click\+Reset\+Puzzle}} ()
+\begin{DoxyCompactList}\small\item\em Handles the click action to reset the currently active puzzle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_ab539dfebe06dc3498d2af09bc8e1aeef}{click\+Cell}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Handles the click event on the cell at row r, column c. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a86d5b530a9e8efe0e1d19c6a5be39ca2}{is\+Lit}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Returns true if the CORRIDOR cell at row r, column c is lit. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a0dbfe2cbe5f30b87e3b7a3445f066b1b}{is\+Lamp}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Returns true if the CORRIDOR cell at row r, column c is a lamp. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a5e9fdee6d83295d3fa8ab27e5f590800}{is\+Clue\+Satisfied}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Returns true if the CLUE cell at row r, column c is satisfied by nearby lamps. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a84a6b07b0f02dc24e17642fb5da43854}{is\+Solved}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the active puzzle is solved. \end{DoxyCompactList}\item 
+Puzzle \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a0bdcf56f4a7f3bc8810b1e5c530dfd5d}{get\+Active\+Puzzle}} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the active puzzle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for handling puzzle-\/related actions in an MVC architecture. 
+
+This interface defines methods for handling actions such as moving to the next/previous puzzle, resetting the current puzzle, and interacting with individual cells in the puzzle. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_ab539dfebe06dc3498d2af09bc8e1aeef}\label{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_ab539dfebe06dc3498d2af09bc8e1aeef} 
+\index{com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}!clickCell@{clickCell}}
+\index{clickCell@{clickCell}!com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}}
+\doxysubsubsection{\texorpdfstring{clickCell()}{clickCell()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+controller.\+Alternate\+Mvc\+Controller.\+click\+Cell (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Handles the click event on the cell at row r, column c. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row of the clicked cell. \\
+\hline
+{\em c} & The column of the clicked cell. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a596093f7ea88247338fd114fe8787330}\label{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a596093f7ea88247338fd114fe8787330} 
+\index{com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}!clickNextPuzzle@{clickNextPuzzle}}
+\index{clickNextPuzzle@{clickNextPuzzle}!com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}}
+\doxysubsubsection{\texorpdfstring{clickNextPuzzle()}{clickNextPuzzle()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+controller.\+Alternate\+Mvc\+Controller.\+click\+Next\+Puzzle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the click action to go to the next puzzle. 
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a7740e641256c2278ab5938659d688369}\label{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a7740e641256c2278ab5938659d688369} 
+\index{com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}!clickPrevPuzzle@{clickPrevPuzzle}}
+\index{clickPrevPuzzle@{clickPrevPuzzle}!com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}}
+\doxysubsubsection{\texorpdfstring{clickPrevPuzzle()}{clickPrevPuzzle()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+controller.\+Alternate\+Mvc\+Controller.\+click\+Prev\+Puzzle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the click action to go to the next puzzle. 
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_ad1f7fcce8b76c3d96c74bc6f14bbf224}\label{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_ad1f7fcce8b76c3d96c74bc6f14bbf224} 
+\index{com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}!clickRandPuzzle@{clickRandPuzzle}}
+\index{clickRandPuzzle@{clickRandPuzzle}!com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}}
+\doxysubsubsection{\texorpdfstring{clickRandPuzzle()}{clickRandPuzzle()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+controller.\+Alternate\+Mvc\+Controller.\+click\+Rand\+Puzzle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the click action to go to a random puzzle. 
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a11f5840d6370757be10df3644a604119}\label{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a11f5840d6370757be10df3644a604119} 
+\index{com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}!clickResetPuzzle@{clickResetPuzzle}}
+\index{clickResetPuzzle@{clickResetPuzzle}!com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}}
+\doxysubsubsection{\texorpdfstring{clickResetPuzzle()}{clickResetPuzzle()}}
+{\footnotesize\ttfamily void com.\+comp301.\+a09akari.\+controller.\+Alternate\+Mvc\+Controller.\+click\+Reset\+Puzzle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the click action to reset the currently active puzzle. 
+
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a0bdcf56f4a7f3bc8810b1e5c530dfd5d}\label{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a0bdcf56f4a7f3bc8810b1e5c530dfd5d} 
+\index{com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}!getActivePuzzle@{getActivePuzzle}}
+\index{getActivePuzzle@{getActivePuzzle}!com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}}
+\doxysubsubsection{\texorpdfstring{getActivePuzzle()}{getActivePuzzle()}}
+{\footnotesize\ttfamily Puzzle com.\+comp301.\+a09akari.\+controller.\+Alternate\+Mvc\+Controller.\+get\+Active\+Puzzle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method for the active puzzle. 
+
+\begin{DoxyReturn}{Returns}
+The currently active puzzle. 
+\end{DoxyReturn}
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a5e9fdee6d83295d3fa8ab27e5f590800}\label{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a5e9fdee6d83295d3fa8ab27e5f590800} 
+\index{com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}!isClueSatisfied@{isClueSatisfied}}
+\index{isClueSatisfied@{isClueSatisfied}!com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}}
+\doxysubsubsection{\texorpdfstring{isClueSatisfied()}{isClueSatisfied()}}
+{\footnotesize\ttfamily boolean com.\+comp301.\+a09akari.\+controller.\+Alternate\+Mvc\+Controller.\+is\+Clue\+Satisfied (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Returns true if the CLUE cell at row r, column c is satisfied by nearby lamps. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row of the cell. \\
+\hline
+{\em c} & The column of the cell. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the CLUE cell is satisfied, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a0dbfe2cbe5f30b87e3b7a3445f066b1b}\label{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a0dbfe2cbe5f30b87e3b7a3445f066b1b} 
+\index{com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}!isLamp@{isLamp}}
+\index{isLamp@{isLamp}!com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}}
+\doxysubsubsection{\texorpdfstring{isLamp()}{isLamp()}}
+{\footnotesize\ttfamily boolean com.\+comp301.\+a09akari.\+controller.\+Alternate\+Mvc\+Controller.\+is\+Lamp (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Returns true if the CORRIDOR cell at row r, column c is a lamp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row of the cell. \\
+\hline
+{\em c} & The column of the cell. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the CORRIDOR cell is a lamp, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a86d5b530a9e8efe0e1d19c6a5be39ca2}\label{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a86d5b530a9e8efe0e1d19c6a5be39ca2} 
+\index{com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}!isLit@{isLit}}
+\index{isLit@{isLit}!com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}}
+\doxysubsubsection{\texorpdfstring{isLit()}{isLit()}}
+{\footnotesize\ttfamily boolean com.\+comp301.\+a09akari.\+controller.\+Alternate\+Mvc\+Controller.\+is\+Lit (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Returns true if the CORRIDOR cell at row r, column c is lit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row of the cell. \\
+\hline
+{\em c} & The column of the cell. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the CORRIDOR cell is lit, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a84a6b07b0f02dc24e17642fb5da43854}\label{interfacecom_1_1comp301_1_1a09akari_1_1controller_1_1_alternate_mvc_controller_a84a6b07b0f02dc24e17642fb5da43854} 
+\index{com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}!isSolved@{isSolved}}
+\index{isSolved@{isSolved}!com.comp301.a09akari.controller.AlternateMvcController@{com.comp301.a09akari.controller.AlternateMvcController}}
+\doxysubsubsection{\texorpdfstring{isSolved()}{isSolved()}}
+{\footnotesize\ttfamily boolean com.\+comp301.\+a09akari.\+controller.\+Alternate\+Mvc\+Controller.\+is\+Solved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if the active puzzle is solved. 
+
+\begin{DoxyReturn}{Returns}
+True if the puzzle is solved, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/comp301/a09akari/controller/\mbox{\hyperlink{_alternate_mvc_controller_8java}{Alternate\+Mvc\+Controller.\+java}}\end{DoxyCompactItemize}

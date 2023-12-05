@@ -1,0 +1,151 @@
+\doxysection{com.\+comp301.\+a09akari.\+model.\+Puzzle\+Impl Class Reference}
+\hypertarget{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl}{}\label{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl}\index{com.comp301.a09akari.model.PuzzleImpl@{com.comp301.a09akari.model.PuzzleImpl}}
+
+
+Implementation of the Puzzle interface for representing a puzzle board.  
+
+
+Inheritance diagram for com.\+comp301.\+a09akari.\+model.\+Puzzle\+Impl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_a7a6ff8b439b34bae9e67a95a2d87024c}{Puzzle\+Impl}} (int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} board)
+\begin{DoxyCompactList}\small\item\em Constructor for the Puzzle\+Impl class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_ad9d3f8f8db84afde468582455294c88c}{get\+Width}} ()
+\begin{DoxyCompactList}\small\item\em Gets the width of the puzzle board. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_a5e8bb42918b4bb717958f645147f0914}{get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Gets the height of the puzzle board. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{enumcom_1_1comp301_1_1a09akari_1_1model_1_1_cell_type}{Cell\+Type}} \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_a598ff438b27f374e5496e4784174a24f}{get\+Cell\+Type}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Gets the cell type at the specified position on the puzzle board. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_af81d8e73f42c427ec574e31a81d72dd7}{get\+Clue}} (int r, int c)
+\begin{DoxyCompactList}\small\item\em Gets the clue value at the specified position on the puzzle board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the Puzzle interface for representing a puzzle board. 
+
+This class implements the Puzzle interface, providing methods to access information about the puzzle board, including dimensions, cell types, and clues. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_a7a6ff8b439b34bae9e67a95a2d87024c}\label{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_a7a6ff8b439b34bae9e67a95a2d87024c} 
+\index{com.comp301.a09akari.model.PuzzleImpl@{com.comp301.a09akari.model.PuzzleImpl}!PuzzleImpl@{PuzzleImpl}}
+\index{PuzzleImpl@{PuzzleImpl}!com.comp301.a09akari.model.PuzzleImpl@{com.comp301.a09akari.model.PuzzleImpl}}
+\doxysubsubsection{\texorpdfstring{PuzzleImpl()}{PuzzleImpl()}}
+{\footnotesize\ttfamily com.\+comp301.\+a09akari.\+model.\+Puzzle\+Impl.\+Puzzle\+Impl (\begin{DoxyParamCaption}\item[{int}]{board\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the Puzzle\+Impl class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em board} & The 2D array representing the puzzle board. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_a598ff438b27f374e5496e4784174a24f}\label{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_a598ff438b27f374e5496e4784174a24f} 
+\index{com.comp301.a09akari.model.PuzzleImpl@{com.comp301.a09akari.model.PuzzleImpl}!getCellType@{getCellType}}
+\index{getCellType@{getCellType}!com.comp301.a09akari.model.PuzzleImpl@{com.comp301.a09akari.model.PuzzleImpl}}
+\doxysubsubsection{\texorpdfstring{getCellType()}{getCellType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumcom_1_1comp301_1_1a09akari_1_1model_1_1_cell_type}{Cell\+Type}} com.\+comp301.\+a09akari.\+model.\+Puzzle\+Impl.\+get\+Cell\+Type (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Gets the cell type at the specified position on the puzzle board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row of the cell. \\
+\hline
+{\em c} & The column of the cell. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cell type at the specified position. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Index\+Out\+Of\+Bounds\+Exception} & if r or c is out of bounds. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a9c157c7dc19d4f776d872cb7ae26f108}{com.\+comp301.\+a09akari.\+model.\+Puzzle}}.
+
+\Hypertarget{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_af81d8e73f42c427ec574e31a81d72dd7}\label{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_af81d8e73f42c427ec574e31a81d72dd7} 
+\index{com.comp301.a09akari.model.PuzzleImpl@{com.comp301.a09akari.model.PuzzleImpl}!getClue@{getClue}}
+\index{getClue@{getClue}!com.comp301.a09akari.model.PuzzleImpl@{com.comp301.a09akari.model.PuzzleImpl}}
+\doxysubsubsection{\texorpdfstring{getClue()}{getClue()}}
+{\footnotesize\ttfamily int com.\+comp301.\+a09akari.\+model.\+Puzzle\+Impl.\+get\+Clue (\begin{DoxyParamCaption}\item[{int}]{r,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Gets the clue value at the specified position on the puzzle board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The row of the clue. \\
+\hline
+{\em c} & The column of the clue. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The clue value at the specified position. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Illegal\+Argument\+Exception} & if the cell is a wall or corridor. \\
+\hline
+{\em Index\+Out\+Of\+Bounds\+Exception} & if r or c is out of bounds. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a7f81ca47b95b2a39f04b9a2c2f3b0b54}{com.\+comp301.\+a09akari.\+model.\+Puzzle}}.
+
+\Hypertarget{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_a5e8bb42918b4bb717958f645147f0914}\label{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_a5e8bb42918b4bb717958f645147f0914} 
+\index{com.comp301.a09akari.model.PuzzleImpl@{com.comp301.a09akari.model.PuzzleImpl}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!com.comp301.a09akari.model.PuzzleImpl@{com.comp301.a09akari.model.PuzzleImpl}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily int com.\+comp301.\+a09akari.\+model.\+Puzzle\+Impl.\+get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the height of the puzzle board. 
+
+\begin{DoxyReturn}{Returns}
+The height of the puzzle board. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a90f4a0fe6318272b6c370f0b7c1261a4}{com.\+comp301.\+a09akari.\+model.\+Puzzle}}.
+
+\Hypertarget{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_ad9d3f8f8db84afde468582455294c88c}\label{classcom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_impl_ad9d3f8f8db84afde468582455294c88c} 
+\index{com.comp301.a09akari.model.PuzzleImpl@{com.comp301.a09akari.model.PuzzleImpl}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!com.comp301.a09akari.model.PuzzleImpl@{com.comp301.a09akari.model.PuzzleImpl}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily int com.\+comp301.\+a09akari.\+model.\+Puzzle\+Impl.\+get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the width of the puzzle board. 
+
+\begin{DoxyReturn}{Returns}
+The width of the puzzle board. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacecom_1_1comp301_1_1a09akari_1_1model_1_1_puzzle_a94b1ebad632c1aa1a31059d7c9c9754a}{com.\+comp301.\+a09akari.\+model.\+Puzzle}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/com/comp301/a09akari/model/\mbox{\hyperlink{_puzzle_impl_8java}{Puzzle\+Impl.\+java}}\end{DoxyCompactItemize}
