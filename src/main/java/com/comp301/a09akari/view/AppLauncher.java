@@ -31,7 +31,7 @@ public class AppLauncher extends Application {
    * @brief Entry point for launching the Akari Puzzle Game application.
    *
    * @param stage The primary stage for the application.
-   *
+   **/
   @Override
   public void start(Stage stage) {
     Puzzle puzzle1 = new PuzzleImpl(SamplePuzzles.PUZZLE_01);
