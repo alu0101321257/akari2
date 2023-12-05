@@ -16,6 +16,7 @@ import org.junit.Test;
  */
 public class AppTest {
 
+
   /**
    * @brief Unit test to verify if the method should return true.
    *
