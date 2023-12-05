@@ -1,3 +1,11 @@
+/**
+ * @file AppLauncher.java
+ * @brief Application launcher for the Akari Puzzle Game.
+ *
+ * This class extends the JavaFX Application class to launch the Akari Puzzle Game application.
+ *
+ * @package com.comp301.a09akari.view
+ */
 package com.comp301.a09akari.view;
 
 import com.comp301.a09akari.SamplePuzzles;
@@ -12,9 +20,18 @@ import com.comp301.a09akari.model.PuzzleLibraryImpl;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
+/**
+ * @brief Application launcher for the Akari Puzzle Game.
+ *
+ * This class extends the JavaFX Application class to launch the Akari Puzzle Game application.
+ */
 public class AppLauncher extends Application {
   private Timer timer;
+  /**
+   * @brief Entry point for launching the Akari Puzzle Game application.
+   *
+   * @param stage The primary stage for the application.
+   *
   @Override
   public void start(Stage stage) {
     Puzzle puzzle1 = new PuzzleImpl(SamplePuzzles.PUZZLE_01);
@@ -58,8 +75,5 @@ public class AppLauncher extends Application {
     stage.setOnCloseRequest(event -> {
       controller.getTime();
     });
-
-
-
   }
 }
