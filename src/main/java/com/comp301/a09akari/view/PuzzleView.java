@@ -1,3 +1,11 @@
+/**
+ * @file PuzzleView.java
+ * @brief View class for rendering the puzzle board in the Akari Puzzle Game.
+ *
+ * This class implements the FXComponent interface to create a view for rendering the puzzle board in the Akari Puzzle Game.
+ *
+ * @package com.comp301.a09akari.view
+ */
 package com.comp301.a09akari.view;
 
 import com.comp301.a09akari.controller.AlternateMvcController;
@@ -10,16 +18,29 @@ import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
-
+/**
+ * @brief View class for rendering the puzzle board in the Akari Puzzle Game.
+ *
+ * This class implements the FXComponent interface to create a view for rendering the puzzle board in the Akari Puzzle Game.
+ */
 public class PuzzleView implements FXComponent {
   private ClassicMvcController controller;
   private Model model;
-
+  /**
+   * @brief Constructor for the PuzzleView class.
+   *
+   * @param ac ClassicMvcController instance for handling user interactions.
+   * @param m Model instance to interact with the game model.
+   */
   public PuzzleView(ClassicMvcController ac, Model m) {
     this.controller = ac;
     this.model = m;
   }
-
+  /**
+   * @brief Renders the puzzle board view.
+   *
+   * @return The root node for the puzzle board view.
+   */
   @Override
   public Parent render() {
     GridPane board = new GridPane();
