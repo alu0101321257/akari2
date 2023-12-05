@@ -1,3 +1,7 @@
+/**
+ * @file SamplePuzzles.java
+ * This class provides sample puzzles for the Akari puzzle game.
+ */
 package com.comp301.a09akari;
 
 public class SamplePuzzles {
