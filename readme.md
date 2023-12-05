@@ -1,9 +1,9 @@
- *Akari*
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SamuelToledoHdez_Akari-DAP&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=SamuelToledoHdez_Akari-DAP)
+# ![280257116-499f5da3-7a86-4a54-83b9-3ee39ab7e2b4 (2)](https://github.com/SamuelToledoHdez/Akari-DAP/assets/72403194/e483831f-0e47-4aa4-8e21-1d0b0da9ae95) *Akari*
+
 
 Akari Puzzle Game application created by davisatwell
 
-![sonarcloud](https://sonarcloud.io/api/project_badges/measure?project=SamuelToledoHdez_Akari-DAP&metric=alert_status)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SamuelToledoHdez_Akari-DAP&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=SamuelToledoHdez_Akari-DAP)
 
 
 ## Integrantes
