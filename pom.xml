@@ -87,7 +87,7 @@
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.0.2</version>
-            <configuration>
+          <configuration>
                 <archive>
                     <manifest>
                         <mainClass>com.comp301.a09akari.Main</mainClass>
@@ -136,7 +136,7 @@
                   </mainClass>
                 </manifest>
               </archive>
-              <appendAssemblyId>false</appendAssemblyId>
+              <appendAssemblyId>true</appendAssemblyId>
               <descriptorRefs>
                 <descriptorRef>jar-with-dependencies</descriptorRef>
               </descriptorRefs>
