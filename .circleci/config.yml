@@ -1,7 +1,21 @@
-steps:
-  - run:
-  #...
-  # run tests and store XML files to a subdirectory, for example, test-results
-  #...
-  - store_test_results:
-    path: test-results
+version: 2.1
+setup: true
+orbs:
+  continuation: circleci/continuation@0.1.2
+
+jobs:
+  auto-create-config:
+    docker:
+      - image: circleci/circleci-inferconfig:latest
+    steps:
+      - checkout
+      - run: circleci-inferconfig > generated_config.yml
+      - continuation/continue:
+          configuration_path: generated_config.yml
+      - store_test_results:
+          path: test-results # ajusta el nombre del directorio según tus necesidades
+
+workflows:
+  analyze-my-code:
+    jobs:
+      - auto-create-config
