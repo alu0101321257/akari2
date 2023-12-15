@@ -12,8 +12,15 @@ jobs:
       - run: circleci-inferconfig > generated_config.yml
       - continuation/continue:
           configuration_path: generated_config.yml
+      - run:
+          name: Run Tests
+          command: |
+            # ... comandos para ejecutar tus pruebas y generar resultados en un directorio
+            mkdir -p ../target/surefire
+            # ... ejecutar pruebas y almacenar resultados en ../target/surefire
+
       - store_test_results:
-          path: target/surefire # ajusta el nombre del directorio según tus necesidades
+          path: ../target/surefire
 
 workflows:
   analyze-my-code:
