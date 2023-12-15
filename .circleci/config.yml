@@ -1,0 +1,7 @@
+steps:
+  - run:
+  #...
+  # run tests and store XML files to a subdirectory, for example, test-results
+  #...
+  - store_test_results:
+    path: test-results
