@@ -13,7 +13,7 @@ jobs:
       - continuation/continue:
           configuration_path: generated_config.yml
       - store_test_results:
-          path: test-results # ajusta el nombre del directorio según tus necesidades
+          path: target/surefire # ajusta el nombre del directorio según tus necesidades
 
 workflows:
   analyze-my-code:
